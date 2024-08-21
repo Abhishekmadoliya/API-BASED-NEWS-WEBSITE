@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar container">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="handlesports()" id="sports">SPORTS</a< /li>
+                <li><a href="#"  onclick="handlefinance()" id="finance">FINANCE</a></li>
+                <li><a href="#" onclick="handlepolitics()" id="politics">POLITICS</a></li>
+                <li><a href="#" onclick="handleolympics()" id="olympics">PARIS-OLYMPICS</a></li>
+            </ul>
+        </nav>
+        <input type="text" name="" id="search" placeholder="search" value="">
+        <button type="submit" id="search-btn" onclick="handlesearchbtn()">Search</button>
+    </div>
+
+    <!-- 
+    NEWS SACTIOM -->
+<div class="heading">
+    <h1>Top NEWS</h1>
+</div>
+
+    <main>
+        <div class="card-container container flex " id="card-container">
+           
+
+        </div>
+    </main>
+
+
+
+    <template id="card-template">
+        <div class="card" >
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" alt="newsimage" id="newsimage">
+            </div>
+            <div class="card-content">
+                <h3 id="news-tite">this is card title</h3>
+                <h6 class="news-source" id="news-source">end gadget 26/8/2020</h6>
+                <p class="description" id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse culpa illum sunt reprehenderit
+                    cupiditate delectus fuga asperiores, alias qui inventore distinctio eaque nulla, adipisci,
+                    exercitationem perferendis. Beatae quaerat aut aliquid.</p>
+                    <a href="" id="urlbtn" onclick="handleurl()">view article</a>
+            </div>
+        </div>
+    </template>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
